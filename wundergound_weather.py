@@ -56,3 +56,5 @@ with open('wundergound.csv','w',newline='') as fp:
             dic['Condition']=dic0['wx_phrase']
             print(dic)
             csvwrite.writerow(dic)
+            
+            #When the csv file is downloaded, the time interval in the csv file is not fixed, and the granularity of the hourly weather data is better according to the requirements, so you can open the file and filter the time in excel: just select all the times that contain 53
