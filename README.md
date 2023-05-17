@@ -1,6 +1,6 @@
 # AAA Project - Group: No Name
 
-## Conda Command Cheat-Sheet
+## Conda Command Cheat-Sheet (Windows Only)
 
 ### Adding a new pyton package
 
@@ -34,7 +34,7 @@ conda env update --file environment.yml --prune
 
 A detailed overview about all conda commands can be found in the conda-cheat-sheet in the ./documents folder.
 
-## Project Setup
+## Project Setup (Windows Only)
 
 To setup the project on your local machine, we will first setup [Conda](https://docs.conda.io/projects/conda/en/stable/index.html). It is a package management system, allowing us to all have the same version of python packets installed that are needed to run the notebooks.
 
@@ -44,7 +44,7 @@ To setup Conda, please install Anaconda as mentioned here: [Link](https://docs.c
 
 Afterwards, locate your installation folder. Search for 'anaconda.exe' and open the file location as shown here:
 
-![](./images/setup//conda-setup.png)
+![Enter 'anaconda.exe' in the windows-searchbar, right-click and select 'open file location'](./images/setup//conda-setup.png)
 
 You are now in your Anaconda folder. Here, move from the 'Scripts' (e.g. C:\path\to\anaconda-folder\anaconda3\scripts) folder to the 'condabin'-Folder (C:\path\to\anaconda-folder\anaconda3\condabin) and add this location to your path-Variable: [Link](https://www.computerhope.com/issues/ch000549.htm)
 
@@ -64,7 +64,7 @@ C:\Users{UserName}\anaconda3\DLLs
 
 Afterwards, restart you computer.
 
-Lastly, run the following commands one after the other in your vsc powershell (STRG+J to open) while you are in your project directory:
+Then, run the following commands one after the other in your vsc powershell (STRG+J to open) while you are in your project directory:
 
 ```powershell
 conda init powershell
@@ -76,3 +76,8 @@ conda activate aaa
 
 conda update conda
 ```
+
+Lastly, make sure you switch to the correct python kernel: STRG+SHIFT+P, then enter 'python: Select Interpreter' and hit enter.
+From here, switch to the correct kernel:
+
+![Select the 'aaa' python interpreter from the list](./images/setup/select-python-interpreter.png)
