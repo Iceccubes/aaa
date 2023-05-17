@@ -3,6 +3,7 @@ import requests
 import json
 import csv
 
+OUTPUT_PATH = './data/wunderground.csv'
 
 def month_days(year,month):
     if (month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12):
@@ -15,7 +16,7 @@ def month_days(year,month):
         return 28
 url='https://api.weather.com/v1/location/KMDW:9:US/observations/historical.json?'
 
-with open('wundergound.csv','w',newline='') as fp:
+with open(OUTPUT_PATH,'w',newline='') as fp:
     csvwrite=csv.DictWriter(fp,fieldnames=['Date','Time','Temperature','Dew Point',
                                            'Humidity','Wind','Wind Speed','Wind Gust',
                                             'Pressure','Precip','Condition',])
