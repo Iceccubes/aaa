@@ -26,7 +26,7 @@ conda env export --from-history > environment.yml
 
 ### After pulling
 
-When a new python package was added. You will know this when you either: 1`)` see changes in the environment.yml or 2`)` when running a notebook results in a missing package error.
+When a new python package was added. You will know this when you either: 1) see changes in the environment.yml or 2) when running a notebook results in a missing package error.
 
 ```powershell
 conda env update --file environment.yml --prune
@@ -46,8 +46,7 @@ Afterwards, locate your installation folder. Search for 'anaconda.exe' and open 
 
 ![](./images/setup//conda-setup.png)
 
-You are now in your Anaconda folder. Here, move from the 'Scripts' folder to the 'condabin'-Folder and add this location (eg. 
-C:\path\to\anaconda-folder\anaconda3\condabin) to your path-Variable: [Link](https://www.computerhope.com/issues/ch000549.htm)
+You are now in your Anaconda folder. Here, move from the 'Scripts' (e.g. C:\path\to\anaconda-folder\anaconda3\scripts) folder to the 'condabin'-Folder (C:\path\to\anaconda-folder\anaconda3\condabin) and add this location to your path-Variable: [Link](https://www.computerhope.com/issues/ch000549.htm)
 
 Then, you need to copy two files to enable SSL in Conda. Idk why this is not done by default, but here we are. Copy (make sure to not move them, as this could break your installation!) the two files:
 
