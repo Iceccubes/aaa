@@ -21,7 +21,7 @@ conda install <package-name>
 Do this after adding a new python package:
 
 ```powershell
-conda env export --from-history > environment.yml
+conda env export > environment.yml
 ```
 
 ### After pulling
