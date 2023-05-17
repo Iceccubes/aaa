@@ -3,7 +3,7 @@ import requests
 import json
 import csv
 
-OUTPUT_PATH = './data/wunderground.csv'
+OUTPUT_PATH = './data/input/wunderground.csv'
 
 def month_days(year,month):
     if (month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12):
